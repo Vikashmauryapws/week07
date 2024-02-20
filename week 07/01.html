@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    .container{
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        gap: 20px;
+        border: 2px solid black;
+        align-items: center;
+        padding: 10px;
+        margin: auto;
+        
+       
+    }
+    .items-2{
+        background-color: yellow;
+        height: 100%;
+        max-height: 90vh;
+    }
+    .items-2 img{
+        height: 100%;
+        width: 80%;
+        
+        
+    }
+    button{
+        padding: 10px 50px;
+        background: #111111;
+        border: none;
+        margin-top: 50px;
+        color: #fff;
+        font-size: large;
+    }
+    .items-1{
+        padding: 0px 50px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="items-1">
+            
+                <h1>Healthy Food</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos deserunt ipsam molestiae minus, aut voluptatibus officia dignissimos ullam dolore nam aspernatur modi tempore id sint quia cupiditate eligendi nisi quibusdam!</p>
+                <button>Read More</button>
+           
+        </div>
+        <div class="items-2">
+            <img src="osho 2016.jpg" alt="img">
+        </div>
+    
+    </div>
+</body>
+</html>

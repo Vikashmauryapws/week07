@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    nav {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        margin: auto;
+        margin-bottom: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    nav img {
+        width: 60px;
+    }
+
+    nav a {
+        text-decoration: none;
+        margin-right: 50px;
+        font-size: 15px;
+        color: #111111;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #20e5aa;
+    }
+
+    .login {
+        cursor: pointer;
+        padding: 10px 0px;
+        border-radius: 5px;
+        border: 0;
+        font-size: 15px;
+        margin-left: 60%;
+        background: #4ada84;
+        margin-top: 0px;
+        color: #111111;
+        font-weight: bold;
+    }
+
+    .container {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        gap: 20px;
+
+        align-items: center;
+        padding: 10px;
+        margin: auto;
+
+
+    }
+
+    .items-2 {
+        background-color: yellow;
+        height: 100%;
+        max-height: 90vh;
+    }
+
+    .items-2 img {
+        height: 100%;
+        width: 70%;
+
+
+    }
+
+    button {
+        padding: 10px 50px;
+        background: #111111;
+        border: none;
+        margin-top: 50px;
+        color: #fff;
+        font-size: large;
+    }
+
+    .items-1 {
+        padding: 0px 50px;
+    }
+
+    .ft-container img {
+        width: 150px;
+    }
+
+    .ft-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+        background-color: #2b1e16;
+        color: #fff;
+
+    }
+
+    .ft-items1 {
+        margin: 10px 50px;
+        text-align: center;
+    }
+
+    .product {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+        background-color: #ffffff;
+        color: #131212;
+        column-gap: 50px;
+        padding: 30px 0px;
+    }
+
+    .pro-items {
+        text-align: center;
+        margin-bottom: 0px;
+        width: 10 0%;
+        overflow: hidden;
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .pro-items img {
+        text-align: center;
+        width: 100%;
+        height: 280px;
+        margin-top: -50px;
+    }
+
+    .pro-text {
+        position: relative;
+        background-color: #fff;
+        margin-top: 0px;
+        top: -50px;
+        text-align: left;
+        border: 1px solid black;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+    .pro-text h4 {
+        margin: 0px;
+        padding: 5px 30px;
+        font-size: 30px;
+    }
+
+    .pro-items p {
+        margin-top: 0px;
+        padding: 10px 30px;
+    }
+    /* ---------------------------------------- foooter css-----------------------*/
+    .foot-container{
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+        background-color: #2e2c2c;
+        color: #fffcfc;
+        
+       
+    }
+    .foot-items img{
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    
+    .links a{
+        text-decoration: none;
+        color: #807676;
+        display: block;
+        padding: 15px;
+
+    }
+    footer p {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: 20px;
+        color: #fff;
+      }
+
+</style>
+
+<body>
+    <nav>
+        <img src="download.png" alt="">
+        <div>
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">Services</a>
+        </div>
+        <button class="login">Login</button>
+    </nav>
+    <div class="container">
+        <div class="items-1">
+
+            <h1>Healthy Food</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos deserunt ipsam molestiae minus, aut
+                voluptatibus officia dignissimos ullam dolore nam aspernatur modi tempore id sint quia cupiditate
+                eligendi nisi quibusdam!</p>
+            <button>Read More</button>
+
+        </div>
+        <div class="items-2">
+            <img src="osho 2016.jpg" alt="img">
+        </div>
+
+    </div>
+
+    <!-- --------------------------delivery---------------------------------- -->
+
+    <div class="ft-container">
+        <div class="ft-items1">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+                alt="">
+            <h3>No Minimum Oreder</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid dignissimos fuga quas animi
+                adipisci quaerat quisquam totam voluptates distinctio.</p>
+        </div>
+        <div class="ft-items1">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+                alt="">
+            <h3>No Minimum Oreder</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid dignissimos fuga quas animi
+                adipisci quaerat quisquam totam voluptates distinctio.</p>
+        </div>
+        <div class="ft-items1">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+                alt="">
+            <h3>Oreder Placed</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dignissimos.</p>
+        </div>
+    </div>
+
+    <!-- ------------------------------some-product-------------------------------------------- -->
+    <div class="product">
+        <div class="pro-items">
+            <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                alt="">
+            <div class="pro-text">
+                <h4>Order Online</h4>
+                <p>Stay Home to Your door Step</p>
+            </div>
+        </div>
+        <div class="pro-items">
+            <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                alt="">
+            <div class="pro-text">
+                <h4>On-site Dining</h4>
+                <p>View the city's favourite dinig venues.</p>
+            </div>
+        </div>
+        <div class="pro-items">
+            <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                alt="">
+            <div class="pro-text">
+                <h4>Nightlife & Clubs</h4>
+                <p>Explore the city's top nightlife outlets & Book tables.</p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------footer section{}---------------------------------- -->
+    <footer>
+        <div class="foot-container">
+            <div class="foot-items">
+                <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" alt="">
+            </div>
+            <div class="foot-items">
+              
+                <div class="links">
+                    <h1>
+                        Navigation Links
+                    </h1>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Logs</a>
+                </div>
+            </div>
+            <div class="foot-items">
+                
+                <div class="links">
+                    <h1>
+                        Learn More
+                    </h1>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Logs</a>
+                </div>
+            </div>
+               <p > &copy; Copyright All rights Reserved</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
